@@ -1,0 +1,17 @@
+comandos git
+
+navegar por carpetas
+cd {tab}
+cd ..
+
+commit
+git add .
+gitt commit -m "comment commit"
+
+github
+git push origin main (completar commit)
+git pull origin main (obtener archivos actualizados)
+
+compilar msys2
+g++ -o archivo_exe_sin_exe archivo_cpp_con.cpp
+./ {tab} ejecutar
