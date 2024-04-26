@@ -14,7 +14,7 @@ int main () {
     mes = mes / 100;
     dia = aaaammdd % 10000;
 
-    cout << "La fecha ingresada con formato 'aaaammdd' es: " << anio; //<< mes << dia << endl;
+    cout << "La fecha ingresada con formato 'aaaammdd' es: " << anio << endl; //<< mes << dia << endl;
 
     system("pause");
     return (0);
