@@ -17,30 +17,58 @@ int length(string s)
 
 int charCount(string s,char c)
 {
+   int i = 0;
+   int count = 0;
+
+   while (s[i] != '\0') {
+      if (s[i] == c) {
+         count++;
+      }
+      i++;
+   }
+   return count;
+}
+
+string substring(string s,int d,int h)  
+{
+   string substrn;                       // variable para después guardar la subcadena  
+   int i=0;                              // indice, valor 0, que es donde comienza
+   
+   while (s[i] != '\0') {                // bucle, mientras que el indice de la subcadena sea distinto a char null . . .
+      if (( i >= d ) && ( i <= h )) {    // verifica si el bucle pertenece al rango d -> h
+         substrn = substrn + s[i];       // si el if se cumple, a la subcadena, se une/concatena ese caracter (en el que está)
+      }
+      i++;                               // pasa al siguiente caracter
+   }
+   return substrn;
+}
+
+string substring(string s,int d) 
+{
+   string substrn;                       // variable para después guardar la subcadena
+   int i = 0;                            // indice, valor 0, donde comienza la cadena
+
+   while (s[i] != '\0') {                // bucle, mientras que el indice de la subcadena sea dinsito al char null . . . 
+      if (s[i] >= d) {                   // si el indice de la subcadena es mayor que d ->
+         substrn = substrn + s[i];       // a la subcadena se le concatena ese caracter.
+      }
+      i++;                               // se pasa al siguiente caracter
+   }
+
+   return substrn;
+}
+
+int indexOf(string s,char c) // ok    // importante
+{
    return 0;
 }
 
-string substring(string s,int d,int h)
-{
-   return "";
-}
-
-string substring(string s,int d) // ok
-{
-   return "";
-}
-
-int indexOf(string s,char c) // ok
+int indexOf(string s,char c,int offSet) // ok   // importante
 {
    return 0;
 }
 
-int indexOf(string s,char c,int offSet) // ok
-{
-   return 0;
-}
-
-int indexOf(string s,string toSearch) // ok
+int indexOf(string s,string toSearch) // ok  // importante
 {
    return 0;
 }
